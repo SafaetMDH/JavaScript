@@ -1,13 +1,18 @@
-//Spread Operator
+//Rest Operator
+
 let top7 = [
     "Singapur",
     "Switch",
     "Maldive",
-    "ABC",
-    "EFG",
-    "GRD",
-    "GHT"
+    "Greece",
+    "Mexico",
+    "Miami",
+    "India"
 ];
+
+const [] = top7;
+
+const[first, second, third, ...secondVisit] = top7
 
 function showItenerary(place1, place2,place3,place4,place5,place6,place7){
     console.log("Visit " + place1);
@@ -20,6 +25,3 @@ function showItenerary(place1, place2,place3,place4,place5,place6,place7){
 }
 
 showItenerary(...top7);
-
-
-
