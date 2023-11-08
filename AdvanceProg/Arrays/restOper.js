@@ -25,3 +25,10 @@ function showItenerary(place1, place2,place3,place4,place5,place6,place7){
 }
 
 showItenerary(...top7);
+
+
+function count(...basket) {
+    console.log(basket.length)
+}
+
+count(10, 9, 8, 7, 6);
